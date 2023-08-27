@@ -2,27 +2,27 @@
 package Modelo;
 
 public class Modelo {
-    private int valor1;
-    private int valor2;
+    private int v1;
+    private int v2;
     private int total;
     
-    
-    public Modelo(){}
-
-    public int getValor1() {
-        return valor1;
+    public Modelo(){   
     }
 
-    public void setValor1(int valor1) {
-        this.valor1 = valor1;
+    public int getV1() {
+        return v1;
     }
 
-    public int getValor2() {
-        return valor2;
+    public void setV1(int v1) {
+        this.v1 = v1;
     }
 
-    public void setValor2(int valor2) {
-        this.valor2 = valor2;
+    public int getV2() {
+        return v2;
+    }
+
+    public void setV2(int v2) {
+        this.v2 = v2;
     }
 
     public int getTotal() {
@@ -31,26 +31,13 @@ public class Modelo {
 
     public void setTotal(int total) {
         this.total = total;
-        
+    }
+    public int sumar() {
+        this.total= this.v1+this.v2;
+        return this.total;
     }
     
-    public int sumar() {
-        this.total = (valor1+valor2);
-        return total;
-    }
-    public int restar() {
-        this.total = (valor1-valor2);
-        return total;
-        
-    }
-    public int multiplicar() {
-        this.total = (valor1*valor2);
-        return total;
-    }
-        public int dividir() {
-        this.total = (valor1/valor2);
-        return total;
-    }
+    
     
     
 }
